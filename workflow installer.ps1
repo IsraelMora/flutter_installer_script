@@ -97,6 +97,11 @@ $wingetPackages = @(
 # Tracking de instalaciones
 $installResults = @{}
 
+# Instalar paquetes Winget en bucle
+foreach ($package in $wingetPackages) {
+    Install-WingetPackage -PackageId $package.Id -PackageName $package.Name
+}
+
 # Instalación de herramientas
 Write-Step "Instalando herramientas necesarias"
 
@@ -127,11 +132,6 @@ try {
 }
 catch {
     Write-Host "Error instalando FVM o Flutter: $($_.Exception.Message)" -ForegroundColor Red
-}
-
-# Instalar paquetes Winget en bucle
-foreach ($package in $wingetPackages) {
-    Install-WingetPackage -PackageId $package.Id -PackageName $package.Name
 }
 
 # Instalar NVM para Windows
