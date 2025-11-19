@@ -40,7 +40,7 @@ Un script de PowerShell completamente automatizado que instala todo el entorno d
 ### 🚀 Opción 1: One-Click desde GitHub (Recomendado)
 ```powershell
 # Copie y pegue esta línea completa en PowerShell con permisos de administrador
-iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/IsraelMora/flutter_instaler_script/main/workflow%20installer.ps1'))
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/IsraelMora/flutter_installer_script/main/workflow%20installer.ps1'))
 ```
 
 ### Opción 2: Ejecutar Archivo Descargado
