@@ -87,8 +87,8 @@ $nvmPath = "$downloadDir\nvm-installer.exe"
 
 # Paquetes Winget a instalar
 $wingetPackages = @(
-    @{ Id = "Git.Git"; Name = "Git" },
     @{ Id = "Microsoft.VisualStudioCode"; Name = "Visual Studio Code" },
+    @{ Id = "Git.Git"; Name = "Git" },
     @{ Id = "Google.AndroidStudio"; Name = "Android Studio" },
     @{ Id = "Microsoft.VisualStudio.2022.Community"; Name = "Visual Studio Community" },
     @{ Id = "EclipseAdoptium.Temurin.17.JDK"; Name = "Adoptium JDK 17" }
